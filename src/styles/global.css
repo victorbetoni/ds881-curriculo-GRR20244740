@@ -1,1 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 @import "tailwindcss";
+
+@utility bg-hero {
+  background-image: url('../assets/background.png');
+}
+
+h1 {
+  @apply text-5xl
+}
+
+h3 {
+  @apply text-4xl
+}
+
+@theme {
+  --font-sans: "Google Sans", sans-serif;
+  --color-primary: #4c00ff;
+  --color-primary-dark: #2c0096;
+}
