@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import "tailwindcss";
+
+@utility bg-hero {
+  background-image: url('../assets/background.png');
+}
+
+h1 {
+  @apply text-5xl
+}
+
+h3 {
+  @apply text-4xl
+}
+
+@theme {
+  --font-sans: "Google Sans", sans-serif;
+
+  --color-primary: #bbff00;
+  --color-primary-dark: #749e00;
+
+  --color-go: #00aeff;
+  --color-bg-go: #d4f1ff;
+
+  --color-java: #cc4b00;
+  --color-bg-java: #ffe4d4;
+
+  --color-angular: #d90000;
+  --color-bg-angular: #f5b3b3;
+
+  --color-redis: #ff0400;
+  --color-bg-redis: #ffc5c4;
+}

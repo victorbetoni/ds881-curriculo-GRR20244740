@@ -1,0 +1,22 @@
+---
+interface Props {
+    titulo: string;
+    inicio: string;
+    fim: string;
+    org: string;
+    first: boolean;
+}
+
+const { titulo, inicio, fim, org, first } = Astro.props;
+---
+
+<div class="flex gap-x-6">
+    <div class=`${!first ? 'mt-2' : '-mt-4'} flex flex-col justify-center items-center ${!first ? '-mb-12' : ''}`>
+        <div class=`${!first?'h-5':'h-4'} w-4 bg-primary`></div>
+        {!first && <div class="h-full w-0.5 bg-primary"></div>}
+    </div>
+    <div>
+        <h4 class="text-xl font-semibold">{titulo}, {org}</h4>
+        <p class="text-sm italic text-gray-500">{inicio} - {fim}</p>
+    </div>
+</div>

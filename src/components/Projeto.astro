@@ -1,0 +1,24 @@
+---
+interface Props {
+    titulo: string;
+    descricao: string;
+    link: string;
+    stack: string[];
+}
+
+const { titulo, descricao, link, stack } = Astro.props;
+---
+
+<div class="p-4 gap-x-6 h-50 bg-gray-50 border-primary shadow-sm border flex flex-col justify-between">
+    <div class="space-y-2">
+        <p class="text-lg font-semibold text-gray-800">{titulo}</p>
+        <p class="text-gray-600 text-sm">{descricao}</p>
+        <a href={link} class="bg-primary text-sm p-1 px-4 rounded-full font-medium text-gray-700" target="_blank">Ver repositório</a>
+    </div>
+    <div class="flex flex-wrap gap-x-1">
+        {stack.map((item) => (
+            <div class="w-fit px-2 bg-primary text-gray-800">{item}</div>  
+          )
+        )}
+    </div>
+</div>
