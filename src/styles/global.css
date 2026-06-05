@@ -15,6 +15,19 @@ h3 {
 
 @theme {
   --font-sans: "Google Sans", sans-serif;
-  --color-primary: #4c00ff;
-  --color-primary-dark: #2c0096;
+
+  --color-primary: #bbff00;
+  --color-primary-dark: #749e00;
+
+  --color-go: #00aeff;
+  --color-bg-go: #d4f1ff;
+
+  --color-java: #cc4b00;
+  --color-bg-java: #ffe4d4;
+
+  --color-angular: #d90000;
+  --color-bg-angular: #f5b3b3;
+
+  --color-redis: #ff0400;
+  --color-bg-redis: #ffc5c4;
 }

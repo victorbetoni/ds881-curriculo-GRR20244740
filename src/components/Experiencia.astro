@@ -12,12 +12,12 @@ const { titulo, inicio, fim, empresa, first, descricao } = Astro.props;
 ---
 
 <div class="flex gap-x-6">
-    <div class=`${!first ? 'mt-8' : '-mt-14'} flex flex-col justify-center items-center ${!first ? '-mb-18' : ''}`>
-        <div class="h-4 w-3.5 bg-primary rounded-full"></div>
+    <div class=`${!first ? 'mt-7' : '-mt-4'} flex flex-col justify-center items-center ${!first ? '-mb-20' : ''}`>
+        <div class="h-4 w-4 bg-primary"></div>
         {!first && <div class="h-full w-0.5 bg-primary"></div>}
     </div>
     <div>
-        <p class="text-md italic text-gray-500">{inicio} - {fim}</p>
+        <p class="text-sm italic text-gray-500">{inicio} - {fim}</p>
         <h4 class="text-xl font-semibold">{titulo}, {empresa}</h4>
         <p class="text-sm text-gray-600">{descricao}</p>
     </div>
